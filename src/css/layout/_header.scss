@@ -1,0 +1,52 @@
+.main-nav{
+    position: fixed;
+    z-index: 5;    
+    margin: 0 auto;
+    padding: 15px 0;
+    width: 100%;
+    border-bottom: 1px solid white;
+    a{
+        color: white;
+        text-transform: uppercase;
+        font-family: 'Oswald', sans-serif;
+        font-weight: 300;
+        font-size: 19px;
+    }
+}
+.container {
+    width:60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-menu {
+    a{
+        padding-left: 22px;
+        opacity: 80%;
+        &:hover{
+            opacity: 100%;
+        }
+    }
+}
+
+.logo{
+    a{font-size: 28px;
+    }
+    
+}
+
+.swiper-container {
+    height: 100vh;
+    margin: auto;
+    z-index: 1;
+
+}
+
+.swiper-slide img {
+    position: absolute;
+    top: -150px;
+    max-width: 100%;
+    
+}
+
