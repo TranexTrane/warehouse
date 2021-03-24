@@ -1,0 +1,48 @@
+.main-footer{
+    background-color: #333333;
+    padding-bottom: 100px;
+    h4{
+        font-size: 18px;
+        color: white;
+    }
+}
+
+.footer-globale {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us{
+    width: 40%;
+    p{
+        margin-top: 20px;
+        color: #808080;
+    }
+}
+
+.follow-us{
+    width: 40%;
+}
+
+.reseau {
+    display:flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 20px;
+    a {color:#808080;
+    }
+}
+
+hr{
+    color: white;
+    max-width: 900px;
+    opacity: 0.5;
+    margin: 100px auto 10px auto;
+}
+
+.copyright {
+    text-align: center;
+    color:#808080;
+    
+}

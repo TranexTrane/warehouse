@@ -1,10 +1,12 @@
 .main-nav{
     position: fixed;
     z-index: 5;    
+    height: 9vh;
     margin: 0 auto;
     padding: 15px 0;
     width: 100%;
     border-bottom: 1px solid white;
+    transition:all ease-in-out 0.3s;
     a{
         color: white;
         text-transform: uppercase;
@@ -24,6 +26,7 @@
     a{
         padding-left: 22px;
         opacity: 80%;
+        transition: all ease-in-out 0.3s;
         &:hover{
             opacity: 100%;
         }
@@ -39,19 +42,17 @@
 .swiper-container {
     height: 100vh;
     margin: auto;
-    z-index: 1;
-
 }
 
 .swiper-slide img {
     position: absolute;
-    top: -150px;
+    top: -130px;
     max-width: 100%;
     
 }
 
 
-header::after{
+.swiper-slide::after{
     content: '';
     position: absolute;
     top:0;
@@ -62,3 +63,39 @@ header::after{
     z-index: 1;
 }
 
+.info-slide{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    text-align: center;
+    
+    p{color: white;
+        font-size: 18px;
+    }
+    button{
+        margin-top: 30px;
+        transition: all ease-in-out 0.3s;
+        &:hover{
+            background-color: black;
+        }
+    }
+}
+
+.swiper-pagination{
+    margin-bottom: 60px;
+}
+.swiper-pagination-bullet{
+    background-color:#37cfa2;
+    width: 15px;
+    height: 15px;
+    border: 0px;
+}
+
+.hide{
+    background-color:white!important;
+    height: 8vh!important;
+    a {color: black!important;
+    }
+}
