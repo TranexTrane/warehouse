@@ -1,11 +1,11 @@
 .main-nav{
     position: fixed;
     z-index: 5;    
-    height: 9vh;
+    height: 90px;
     margin: 0 auto;
     padding: 15px 0;
     width: 100%;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.534);
     transition:all ease-in-out 0.3s;
     a{
         color: white;
@@ -46,8 +46,10 @@
 
 .swiper-slide img {
     position: absolute;
-    top: -130px;
-    max-width: 100%;
+    top:0;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
     
 }
 
@@ -95,7 +97,94 @@
 
 .hide{
     background-color:white!important;
-    height: 8vh!important;
+    height: 82px!important;
+    margin-top: -15px;
+    box-shadow: 5px 5px 5px rgba(41, 40, 40, 0.24);
     a {color: black!important;
     }
+    .burger-menu > div{
+        background-color: grey;
+        margin-top: -15px;
+    }
+}
+
+
+  
+  
+
+
+  
+  @media screen and (min-width:1200px) {
+    .burger-menu {
+      display: none;
+    }
+  
+    .main-nav{
+      transform:translateX(0);
+      background:none;
+      flex-direction:row;
+      justify-content:flex-end;
+      align-items:flex-start;
+      padding-top:30px;
+      padding-right:30px;
+    }
+    
+  }
+
+  @media screen and (max-width:1200px) {
+      .main-nav{
+      display: flex;
+      .main-menu{
+          position:fixed;
+          display: flex;
+          flex-direction: column;
+          height: 100vh;
+          background-color: white;
+          max-width: 250px;
+          width: 100%;
+          top: 0px;
+          right: -300px;
+          padding-top: 100px;
+          z-index: 50;
+          transition:all ease-in-out 0.5s ;
+          a{
+            color: black;
+            font-family: "Roboto" !important;
+            text-transform: none;
+            font-weight: 400;
+            margin-bottom: 30px;
+            opacity: 1;
+          }
+      }
+      .active{
+        right: 0px!important;
+    }
+        }
+    .burger-menu {
+        width: 40px;
+        height: 40px;
+        position: fixed;
+        top:20px;
+        right:30px;
+        border-radius:7px;
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items:center;
+        z-index:150;
+        cursor:pointer;
+        transition:.5s all cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+      }
+      .burger-menu div {
+        width: 70%;
+        height: 3px;
+        background:white;
+        margin:3px 0;
+        transition:.3s all ease-in-out;
+       }
+
+       .active2{
+            background-color: #37cfa2!important;
+        }
 }

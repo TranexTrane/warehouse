@@ -86,3 +86,47 @@ form{
     padding: 20px;
     align-self: flex-start;
 }
+
+@media screen and (max-width:1200px) {
+    .contact-us{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 1200px;
+        margin: 0 auto;
+        left: 25%;
+    }
+    .contact-info{
+        position: relative;
+        margin: 0 auto;
+        left: -25%;
+        max-width: 600px;
+        margin-bottom: 50px;
+    }
+}
+
+
+@media screen and (max-width:715px) {
+    .contact-us{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        margin: 0 auto;
+        left: 25%;
+    }
+    .contact-info{
+        position: relative;
+        margin: 0 auto;
+        left: -25%;
+        max-width: 600px;
+        margin-bottom: 50px;
+    }
+    .contact-form{
+        position: relative;
+        margin: 0 auto;
+        left: -25%;
+        max-width: 600px;
+        margin-bottom: 50px;
+    }
+}

@@ -44,5 +44,21 @@ hr{
 .copyright {
     text-align: center;
     color:#808080;
-    
+    a{
+        color: white;
+    }
+}
+
+
+@media screen and (max-width:1015px) {
+    .footer-globale{
+        width: 800px;
+    }
+}
+
+@media screen and (max-width:715px) {
+
+ .footer-globale{
+        width: 600px;
+    }
 }

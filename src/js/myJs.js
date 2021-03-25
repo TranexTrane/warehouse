@@ -14,8 +14,19 @@ var swiper = new Swiper('.swiper-container', {
         } else {
             navigation.classList.remove("hide");
         }
-        if (alreadyScrolled < dernierScroll) {
-            navigation.classList.remove("hide");
-        }
+        // if (alreadyScrolled < dernierScroll) {
+        //     navigation.classList.remove("hide");
+        // }
         dernierScroll = alreadyScrolled;
         });
+
+        
+        let burger = document.querySelector(".burger-menu");
+        let nav = document.querySelector(".main-menu");
+        let divBurger = document.querySelectorAll(".burger-menu div")
+
+        burger.addEventListener('click', function() {
+            for (var e = 0; e < divBurger.length; e++)
+            divBurger[e].classList.toggle("active2")
+            nav.classList.toggle("active");
+});

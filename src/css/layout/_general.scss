@@ -56,6 +56,7 @@ h3{
         color: white;
     }
 }
+
 h4 {
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
@@ -68,4 +69,126 @@ h1{
     font-weight: 300;
     text-transform: uppercase;
     font-size: 50px;
+}
+
+@media screen and (max-width:1200px) {
+    .wrapper{
+        width: 1000px;
+    }
+}
+
+@media screen and (max-width:715px) {
+    .wrapper{
+        width: 700px;
+    }
+}
+
+.bannier{
+    background: url(../img/hero_1.jpg) center/cover;
+    height: 100vh;
+    .bannier-txt{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        z-index: 5;
+        h1{
+            margin-bottom: 10px;
+        }
+        p{
+            color: white;
+            font-size: 25px;
+        }
+        
+    }
+}
+
+.bannier::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.30);
+    z-index: 1;
+}
+
+
+.bannier-prop{
+    background: url(../img/hero_1.jpg) center/cover;
+    height: 40vh;
+    .bannier-prop-txt{
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        z-index: 5;
+        h1{
+            margin-bottom: 10px;
+        }
+        p{
+            color: white;
+            font-size: 25px;
+        }
+        
+    }
+}
+
+.bannier-prop::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 40vh;
+    background: rgba(0,0,0,0.30);
+    z-index: 1;
+}
+
+.property-images{    
+    max-width: 600px;
+    width: 100%;
+    height: 1000px;
+    margin-bottom: 50px;
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        z-index: 5;
+    }
+
+}
+
+.property {
+    max-width: 1200px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 50px;
+    padding-left: 50px;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.property-images{
+    width: 600px;
+}
+.details{
+    width: 400px;
+}
+
+.property-description{
+    .who{width: 400px;
+        margin-top: 25px;
+    img{
+        width: 100px;
+        border-radius: 100px;
+    }
+    }
 }
